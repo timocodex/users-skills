@@ -1,0 +1,27 @@
+<% include ../partials/header %>
+<h1><%=title%></h1>
+<form action="/adduserskill" method="post">
+ <br>
+  <label>user id</label>
+  <input type="text" name="userid" readonly="true" value="<%=user.id%>">
+ <br>
+  <label>name</label>
+  <input type="text" name="name" readonly="true" value="<%=user.name%>">
+ <br>
+  <label>Skills</label>
+  <select class="" name="skillid">
+    <% for(var i=0;i<skill.length;i++){%>
+    <option value="<%=skill[i].id%>"><%=skill[i].name%></option>
+    <% } %>
+  </select>
+ <br>
+  <label>Skill point</label>
+  <select class="" name="point">
+    <% for(var i=1;i<11;i++){%>
+    <option value="<%=i%>"><%=i%></option>
+    <% } %>
+  </select>
+ <br>
+  <input type="submit" value="Submit">
+</form>
+<% include ../partials/footer %>

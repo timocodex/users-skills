@@ -1,0 +1,18 @@
+<% include ../partials/header %>
+
+<h1><%=title%></h1>
+<table class="table table-striped">
+  <tr>
+    <th>User Name</th>
+    <th>Action</th>
+  </tr>
+  <% for(var i=0;i<users.length;i++){%>
+  <tr>
+    <td><%=users[i].name%></td>
+    <td><a href="/addSkill/<%=users[i].id%>"> add skill </a>||<a href="/showSkill/<%=users[i].id%>"> show skills </a></td>
+  </tr>
+  <% }%>
+</table>
+<h1>Add New User</h1>
+<% include userform%>
+<% include ../partials/footer %>

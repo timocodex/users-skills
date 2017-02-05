@@ -1,0 +1,15 @@
+<% include ../partials/header %>
+<h1><%=title%></h1>
+<table style="width:100%" border="1">
+  <tr>
+    <th>Skills</th>
+    <th>Point</th>
+  </tr>
+  <% for(var i=0;i<skills.length;i++){%>
+  <tr>
+    <td><%=skills[i].name%></td>
+    <td><%=skills[i].UserSkill.skill_point%></td>
+  </tr>
+  <% }%>
+</table>
+<% include ../partials/footer %>

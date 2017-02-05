@@ -2,7 +2,7 @@ const db = require('../models')
 
 module.exports = {
   newUser: function(req,res){
-    db.User.create({name:req.body.name}).then(function(user){
+    db.User.create({name:req.body.name,picture:req.body.picture}).then(function(user){
       res.redirect('/user')
     })
   },

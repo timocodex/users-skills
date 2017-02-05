@@ -1,27 +1,32 @@
 <% include ../partials/header %>
 <h1><%=title%></h1>
 <form action="/adduserskill" method="post">
- <br>
-  <label>user id</label>
-  <input type="text" name="userid" readonly="true" value="<%=user.id%>">
- <br>
-  <label>name</label>
-  <input type="text" name="name" readonly="true" value="<%=user.name%>">
- <br>
-  <label>Skills</label>
-  <select class="" name="skillid">
-    <% for(var i=0;i<skill.length;i++){%>
-    <option value="<%=skill[i].id%>"><%=skill[i].name%></option>
-    <% } %>
-  </select>
- <br>
-  <label>Skill point</label>
-  <select class="" name="point">
-    <% for(var i=1;i<11;i++){%>
-    <option value="<%=i%>"><%=i%></option>
-    <% } %>
-  </select>
- <br>
-  <input type="submit" value="Submit">
+   <div class="form-group">
+    <label>user id</label>
+    <input type="text" class="form-control" name="userid" readonly="true" value="<%=user.id%>">
+   </div>
+   <div class="form-group">
+     <label>name</label>
+     <input type="text" class="form-control" name="name" readonly="true" value="<%=user.name%>">
+   </div>
+  <div class="form-group">
+    <label>Skills</label>
+    <select class="" name="skillid">
+      <% for(var i=0;i<skill.length;i++){%>
+      <option value="<%=skill[i].id%>"><%=skill[i].name%></option>
+      <% } %>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Skill point</label>
+    <select class="" name="point">
+      <% for(var i=1;i<11;i++){%>
+      <option value="<%=i%>"><%=i%></option>
+      <% } %>
+    </select>
+</div>
+  <div class="form-group">
+      <input type="submit" value="Submit">
+  </div>
 </form>
 <% include ../partials/footer %>

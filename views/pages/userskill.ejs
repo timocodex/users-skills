@@ -1,6 +1,7 @@
 <% include ../partials/header %>
+<img src= "<%=user.picture%>" class="img-rounded"  width="20%" height="20%" alt="No image"class="img-responsive" alt="Responsive image">
 <h1><%=title%></h1>
-<table style="width:100%" border="1">
+<table class="table table-striped">
   <tr>
     <th>Skills</th>
     <th>Point</th>
@@ -12,4 +13,5 @@
   </tr>
   <% }%>
 </table>
+<button type="button" name="button"><a href="http://localhost:3000/user">HOME</a></button>
 <% include ../partials/footer %>

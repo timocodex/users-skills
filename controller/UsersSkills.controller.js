@@ -18,7 +18,7 @@ module.exports = {
   getUserSkills: function(req,res){
     db.User.findById(req.params.id).then(function(user){
       user.getSkills().then(function(skill){
-          res.render('pages/userskill',{title:user.name+"'s skills",skills:skill})
+          res.render('pages/userskill',{title:user.name+"'s skills",skills:skill,user:user})
       })
     })
   },

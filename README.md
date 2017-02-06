@@ -1,3 +1,9 @@
 # users-skills
-##Intro
-This simple coding is to show the difference of using sequelize and mongoose when handling relation in database and models.
+
+## Purpose
+
+	To show the use of association in class/relational table/object
+
+## How to access
+
+	via : http://localhost:3000/user

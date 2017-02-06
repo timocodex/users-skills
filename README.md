@@ -7,3 +7,4 @@
 ## How to access
 
 	via : http://localhost:3000/user
+	database: postgres

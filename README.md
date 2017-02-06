@@ -2,7 +2,7 @@
 
 ## Purpose
 
-	To show the use of association in class/relational table/object
+	To show the use of association in class/relational table/object using orm
 
 ## How to access
 
